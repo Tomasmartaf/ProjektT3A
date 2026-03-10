@@ -11,5 +11,10 @@ namespace Projekt_PRG_TM
         {
 
         }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
