@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnHrat = new Button();
             btnKonec = new Button();
             SuspendLayout();
             // 
-            // button1
+            // btnHrat
             // 
-            button1.BackColor = Color.White;
-            button1.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(90, 166);
-            button1.Name = "button1";
-            button1.Size = new Size(469, 40);
-            button1.TabIndex = 1;
-            button1.Text = "Hrát";
-            button1.UseVisualStyleBackColor = false;
+            btnHrat.BackColor = Color.White;
+            btnHrat.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
+            btnHrat.ForeColor = Color.Black;
+            btnHrat.Location = new Point(90, 166);
+            btnHrat.Name = "btnHrat";
+            btnHrat.Size = new Size(469, 40);
+            btnHrat.TabIndex = 1;
+            btnHrat.Text = "Hrát";
+            btnHrat.UseVisualStyleBackColor = false;
+            btnHrat.Click += btnHrat_Click;
             // 
             // btnKonec
             // 
@@ -54,6 +55,7 @@
             btnKonec.TabIndex = 2;
             btnKonec.Text = "KONEC";
             btnKonec.UseVisualStyleBackColor = false;
+            btnKonec.Click += btnKonec_Click;
             // 
             // Form1
             // 
@@ -64,7 +66,7 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(629, 594);
             Controls.Add(btnKonec);
-            Controls.Add(button1);
+            Controls.Add(btnHrat);
             DoubleBuffered = true;
             Name = "Form1";
             Text = "Form1";
@@ -74,7 +76,7 @@
         }
 
         #endregion
-        private Button button1;
+        private Button btnHrat;
         private Button btnKonec;
     }
 }

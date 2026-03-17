@@ -21,5 +21,21 @@ namespace Projekt_PRG_TM
         {
 
         }
+
+        private void btnKonec_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnHrat_Click(object sender, EventArgs e)
+        {
+            herniOkno herniForm = new herniOkno();
+
+            herniForm.Show();
+
+            this.Hide();
+
+            herniForm.FormClosed += (s, args) => this.Show();
+        }
     }
 }
