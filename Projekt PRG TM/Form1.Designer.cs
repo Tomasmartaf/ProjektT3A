@@ -28,39 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Nadpis = new Label();
+            button1 = new Button();
+            btnKonec = new Button();
             SuspendLayout();
             // 
-            // Nadpis
+            // button1
             // 
-            Nadpis.AutoSize = true;
-            Nadpis.BackColor = Color.Transparent;
-            Nadpis.Font = new Font("Segoe UI", 50.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Nadpis.ForeColor = SystemColors.Control;
-            Nadpis.Location = new Point(225, 9);
-            Nadpis.Name = "Nadpis";
-            Nadpis.Size = new Size(328, 89);
-            Nadpis.TabIndex = 0;
-            Nadpis.Text = "ŠIBENICE";
-            Nadpis.Click += Nadpis_Click;
+            button1.BackColor = Color.White;
+            button1.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(90, 166);
+            button1.Name = "button1";
+            button1.Size = new Size(469, 40);
+            button1.TabIndex = 1;
+            button1.Text = "Hrát";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // btnKonec
+            // 
+            btnKonec.BackColor = Color.White;
+            btnKonec.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
+            btnKonec.Location = new Point(90, 255);
+            btnKonec.Name = "btnKonec";
+            btnKonec.Size = new Size(469, 40);
+            btnKonec.TabIndex = 2;
+            btnKonec.Text = "KONEC";
+            btnKonec.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 450);
-            Controls.Add(Nadpis);
+            BackgroundImage = Properties.Resources.šibenice;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(629, 594);
+            Controls.Add(btnKonec);
+            Controls.Add(button1);
+            DoubleBuffered = true;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             Paint += Form1_Paint;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label Nadpis;
+        private Button button1;
+        private Button btnKonec;
     }
 }
