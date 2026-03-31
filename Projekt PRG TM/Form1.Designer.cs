@@ -41,7 +41,7 @@
             btnHrat.Name = "btnHrat";
             btnHrat.Size = new Size(469, 40);
             btnHrat.TabIndex = 1;
-            btnHrat.Text = "Hrát";
+            btnHrat.Text = "HRÁT";
             btnHrat.UseVisualStyleBackColor = false;
             btnHrat.Click += btnHrat_Click;
             // 
