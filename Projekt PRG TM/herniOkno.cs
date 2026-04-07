@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace Projekt_PRG_TM
@@ -11,7 +10,7 @@ namespace Projekt_PRG_TM
 
         string vybraneSlovo;
         char[] hadaneZnaky;
-        int randomSlovo;
+        int pocetPokusu = 0;
 
         string[] slovaPole =
         {
@@ -23,13 +22,22 @@ namespace Projekt_PRG_TM
         public herniOkno()
         {
             InitializeComponent();
+
+            foreach (Control ctrl in flowLayoutPanel1.Controls)
+            {
+                if (ctrl is Button)
+                {
+                    ctrl.Click += Pismeno_Click;
+                }
+            }
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
             hraje = true;
-            int randomSlovo = rnd.Next(slovaPole.Length);
+            
 
+            int randomSlovo = rnd.Next(slovaPole.Length);
             vybraneSlovo = slovaPole[randomSlovo];
 
             hadaneZnaky = new char[vybraneSlovo.Length];
@@ -39,8 +47,52 @@ namespace Projekt_PRG_TM
             }
 
             hadaneSlovo.Text = string.Join(" ", hadaneZnaky);
+
+            foreach (Control ctrl in flowLayoutPanel1.Controls)
+            {
+                if (ctrl is Button)
+                    ctrl.Enabled = true;
+            }
         }
-        
+
+        private void Pismeno_Click(object sender, EventArgs e)
+        {
+            if (!hraje) return;
+
+            pocetPokusu++;
+
+            Button btn = sender as Button;
+
+            char hadanePismeno = btn.Text.ToLower()[0];
+            btn.Enabled = false;
+
+            for (int i = 0; i < vybraneSlovo.Length; i++)
+            {
+                if (vybraneSlovo[i] == hadanePismeno)
+                {
+                    hadaneZnaky[i] = hadanePismeno;
+                }
+            }
+
+            hadaneSlovo.Text = string.Join(" ", hadaneZnaky);
+
+            if (hadaneSlovo.Text.Contains("_"))
+            {
+                // Hráč ještě nevyhrál
+            }
+            else
+            {
+                MessageBox.Show("Gratulujeme! Vyhráli jste!");
+                hraje = false;
+            }
+
+            if (pocetPokusu >= 9)
+            {
+                MessageBox.Show($"Prohráli jste! Správné slovo bylo: {vybraneSlovo}");
+                hraje = false;
+            }
+        }
+
         private void btnKonecHerniOkno_Click(object sender, EventArgs e)
         {
             this.Close();
