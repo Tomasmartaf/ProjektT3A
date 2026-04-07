@@ -105,6 +105,7 @@
             obesenecKresleni.Size = new Size(396, 241);
             obesenecKresleni.TabIndex = 5;
             obesenecKresleni.TabStop = false;
+            obesenecKresleni.Paint += obesenecKresleni_Paint;
             // 
             // flowLayoutPanel1
             // 
