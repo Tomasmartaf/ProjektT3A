@@ -52,11 +52,7 @@ namespace Projekt_PRG_TM
 
         private void btnHrat_Enter(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
-            if (btn.Enabled)
-            {
-                btn.Cursor = Cursors.Hand;
-            }
+            
         }
     }
 }

@@ -40,8 +40,8 @@ namespace Projekt_PRG_TM
 
             vybraneSlovo = slovaPole[rnd.Next(slovaPole.Length)].ToLower(); // Výběr náhodného slova z pole se slovy a převede na malá písmena
 
-            hadaneZnaky = new char[vybraneSlovo.Length];    // Pole pro počet znaků ve vybraném slově
-            for (int i = 0; i < hadaneZnaky.Length; i++)    // Naplní pole podtržítky pro každý znak ve slově
+            hadaneZnaky = new char[vybraneSlovo.Length];      // Pole pro počet znaků ve vybraném slově
+            for (int i = 0; i < hadaneZnaky.Length; i++)      // Naplní pole podtržítky pro každý znak ve slově
                 hadaneZnaky[i] = '_';
 
             hadaneSlovo.Text = string.Join(" ", hadaneZnaky); // Nastaví text po startu hry
@@ -61,9 +61,9 @@ namespace Projekt_PRG_TM
 
             bool nalezenoPismeno = false;
 
-            Button btn = sender as Button;  // určení objektu co vyvolava udalost na tlačítko
+            Button btn = sender as Button;              // určení objektu co vyvolava udalost na tlačítko
             char hadanePismeno = btn.Text.ToLower()[0]; // získá písmeno z textu tlačítka a převede na malá písmena
-            btn.Enabled = false; // Vypne tlačítko aby nebylo možne kliknout znovu na stejné písmeno
+            btn.Enabled = false;                        // Vypne tlačítko aby nebylo možne kliknout znovu na stejné písmeno
 
             for (int i = 0; i < vybraneSlovo.Length; i++)
             {
@@ -147,11 +147,7 @@ namespace Projekt_PRG_TM
         private void btnKonec_Enter(object sender, EventArgs e)
         {
 
-            Button btn = sender as Button;
-            if (btn.Enabled)
-            {
-                btn.Cursor = Cursors.Hand;
-            }
+            
         }
 
         private void btnKonec_Leave(object sender, EventArgs e)
@@ -161,12 +157,10 @@ namespace Projekt_PRG_TM
 
         private void btnStart_Enter(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
-            if (btn.Enabled)
-            {
-                btn.Cursor = Cursors.Hand;
-            }
-        
+           
+
         }
+
+
     }
 }

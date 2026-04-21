@@ -77,6 +77,7 @@
             // btnKonec
             // 
             btnKonec.BackColor = Color.Black;
+            btnKonec.Cursor = Cursors.Hand;
             btnKonec.FlatAppearance.BorderSize = 0;
             btnKonec.FlatStyle = FlatStyle.Flat;
             btnKonec.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
@@ -158,6 +159,7 @@
             // btnA
             // 
             btnA.BackColor = Color.Black;
+            btnA.Cursor = Cursors.Hand;
             btnA.FlatAppearance.BorderColor = Color.Black;
             btnA.FlatAppearance.BorderSize = 0;
             btnA.FlatStyle = FlatStyle.Flat;
@@ -173,6 +175,7 @@
             // btnAa
             // 
             btnAa.BackColor = Color.Black;
+            btnAa.Cursor = Cursors.Hand;
             btnAa.FlatAppearance.BorderColor = Color.Black;
             btnAa.FlatAppearance.BorderSize = 0;
             btnAa.FlatStyle = FlatStyle.Flat;
@@ -188,6 +191,7 @@
             // btnB
             // 
             btnB.BackColor = Color.Black;
+            btnB.Cursor = Cursors.Hand;
             btnB.FlatAppearance.BorderColor = Color.Black;
             btnB.FlatAppearance.BorderSize = 0;
             btnB.FlatStyle = FlatStyle.Flat;
@@ -203,6 +207,7 @@
             // btnC
             // 
             btnC.BackColor = Color.Black;
+            btnC.Cursor = Cursors.Hand;
             btnC.FlatAppearance.BorderColor = Color.Black;
             btnC.FlatAppearance.BorderSize = 0;
             btnC.FlatStyle = FlatStyle.Flat;
@@ -218,6 +223,7 @@
             // btnCc
             // 
             btnCc.BackColor = Color.Black;
+            btnCc.Cursor = Cursors.Hand;
             btnCc.FlatAppearance.BorderColor = Color.Black;
             btnCc.FlatAppearance.BorderSize = 0;
             btnCc.FlatStyle = FlatStyle.Flat;
@@ -233,6 +239,7 @@
             // btnD
             // 
             btnD.BackColor = Color.Black;
+            btnD.Cursor = Cursors.Hand;
             btnD.FlatAppearance.BorderColor = Color.Black;
             btnD.FlatAppearance.BorderSize = 0;
             btnD.FlatStyle = FlatStyle.Flat;
@@ -248,6 +255,7 @@
             // btnDd
             // 
             btnDd.BackColor = Color.Black;
+            btnDd.Cursor = Cursors.Hand;
             btnDd.FlatAppearance.BorderColor = Color.Black;
             btnDd.FlatAppearance.BorderSize = 0;
             btnDd.FlatStyle = FlatStyle.Flat;
@@ -263,6 +271,7 @@
             // btnE
             // 
             btnE.BackColor = Color.Black;
+            btnE.Cursor = Cursors.Hand;
             btnE.FlatAppearance.BorderColor = Color.Black;
             btnE.FlatAppearance.BorderSize = 0;
             btnE.FlatStyle = FlatStyle.Flat;
@@ -278,6 +287,7 @@
             // btnEe
             // 
             btnEe.BackColor = Color.Black;
+            btnEe.Cursor = Cursors.Hand;
             btnEe.FlatAppearance.BorderColor = Color.Black;
             btnEe.FlatAppearance.BorderSize = 0;
             btnEe.FlatStyle = FlatStyle.Flat;
@@ -293,6 +303,7 @@
             // btnF
             // 
             btnF.BackColor = Color.Black;
+            btnF.Cursor = Cursors.Hand;
             btnF.FlatAppearance.BorderColor = Color.Black;
             btnF.FlatAppearance.BorderSize = 0;
             btnF.FlatStyle = FlatStyle.Flat;
@@ -308,6 +319,7 @@
             // btnG
             // 
             btnG.BackColor = Color.Black;
+            btnG.Cursor = Cursors.Hand;
             btnG.FlatAppearance.BorderColor = Color.Black;
             btnG.FlatAppearance.BorderSize = 0;
             btnG.FlatStyle = FlatStyle.Flat;
@@ -323,6 +335,7 @@
             // btnH
             // 
             btnH.BackColor = Color.Black;
+            btnH.Cursor = Cursors.Hand;
             btnH.FlatAppearance.BorderColor = Color.Black;
             btnH.FlatAppearance.BorderSize = 0;
             btnH.FlatStyle = FlatStyle.Flat;
@@ -338,6 +351,7 @@
             // btnI
             // 
             btnI.BackColor = Color.Black;
+            btnI.Cursor = Cursors.Hand;
             btnI.FlatAppearance.BorderColor = Color.Black;
             btnI.FlatAppearance.BorderSize = 0;
             btnI.FlatStyle = FlatStyle.Flat;
@@ -353,6 +367,7 @@
             // btnIi
             // 
             btnIi.BackColor = Color.Black;
+            btnIi.Cursor = Cursors.Hand;
             btnIi.FlatAppearance.BorderColor = Color.Black;
             btnIi.FlatAppearance.BorderSize = 0;
             btnIi.FlatStyle = FlatStyle.Flat;
@@ -368,6 +383,7 @@
             // btnJ
             // 
             btnJ.BackColor = Color.Black;
+            btnJ.Cursor = Cursors.Hand;
             btnJ.FlatAppearance.BorderColor = Color.Black;
             btnJ.FlatAppearance.BorderSize = 0;
             btnJ.FlatStyle = FlatStyle.Flat;
@@ -383,6 +399,7 @@
             // btnK
             // 
             btnK.BackColor = Color.Black;
+            btnK.Cursor = Cursors.Hand;
             btnK.FlatAppearance.BorderColor = Color.Black;
             btnK.FlatAppearance.BorderSize = 0;
             btnK.FlatStyle = FlatStyle.Flat;
@@ -398,6 +415,7 @@
             // btnL
             // 
             btnL.BackColor = Color.Black;
+            btnL.Cursor = Cursors.Hand;
             btnL.FlatAppearance.BorderColor = Color.Black;
             btnL.FlatAppearance.BorderSize = 0;
             btnL.FlatStyle = FlatStyle.Flat;
@@ -413,6 +431,7 @@
             // btnM
             // 
             btnM.BackColor = Color.Black;
+            btnM.Cursor = Cursors.Hand;
             btnM.FlatAppearance.BorderColor = Color.Black;
             btnM.FlatAppearance.BorderSize = 0;
             btnM.FlatStyle = FlatStyle.Flat;
@@ -428,6 +447,7 @@
             // btnN
             // 
             btnN.BackColor = Color.Black;
+            btnN.Cursor = Cursors.Hand;
             btnN.FlatAppearance.BorderColor = Color.Black;
             btnN.FlatAppearance.BorderSize = 0;
             btnN.FlatStyle = FlatStyle.Flat;
@@ -443,6 +463,7 @@
             // btnNn
             // 
             btnNn.BackColor = Color.Black;
+            btnNn.Cursor = Cursors.Hand;
             btnNn.FlatAppearance.BorderColor = Color.Black;
             btnNn.FlatAppearance.BorderSize = 0;
             btnNn.FlatStyle = FlatStyle.Flat;
@@ -458,6 +479,7 @@
             // btnO
             // 
             btnO.BackColor = Color.Black;
+            btnO.Cursor = Cursors.Hand;
             btnO.FlatAppearance.BorderColor = Color.Black;
             btnO.FlatAppearance.BorderSize = 0;
             btnO.FlatStyle = FlatStyle.Flat;
@@ -473,6 +495,7 @@
             // btnP
             // 
             btnP.BackColor = Color.Black;
+            btnP.Cursor = Cursors.Hand;
             btnP.FlatAppearance.BorderColor = Color.Black;
             btnP.FlatAppearance.BorderSize = 0;
             btnP.FlatStyle = FlatStyle.Flat;
@@ -488,6 +511,7 @@
             // btnQ
             // 
             btnQ.BackColor = Color.Black;
+            btnQ.Cursor = Cursors.Hand;
             btnQ.FlatAppearance.BorderColor = Color.Black;
             btnQ.FlatAppearance.BorderSize = 0;
             btnQ.FlatStyle = FlatStyle.Flat;
@@ -503,6 +527,7 @@
             // btnR
             // 
             btnR.BackColor = Color.Black;
+            btnR.Cursor = Cursors.Hand;
             btnR.FlatAppearance.BorderColor = Color.Black;
             btnR.FlatAppearance.BorderSize = 0;
             btnR.FlatStyle = FlatStyle.Flat;
@@ -518,6 +543,7 @@
             // btnRr
             // 
             btnRr.BackColor = Color.Black;
+            btnRr.Cursor = Cursors.Hand;
             btnRr.FlatAppearance.BorderColor = Color.Black;
             btnRr.FlatAppearance.BorderSize = 0;
             btnRr.FlatStyle = FlatStyle.Flat;
@@ -533,6 +559,7 @@
             // btnS
             // 
             btnS.BackColor = Color.Black;
+            btnS.Cursor = Cursors.Hand;
             btnS.FlatAppearance.BorderColor = Color.Black;
             btnS.FlatAppearance.BorderSize = 0;
             btnS.FlatStyle = FlatStyle.Flat;
@@ -548,6 +575,7 @@
             // btnSs
             // 
             btnSs.BackColor = Color.Black;
+            btnSs.Cursor = Cursors.Hand;
             btnSs.FlatAppearance.BorderColor = Color.Black;
             btnSs.FlatAppearance.BorderSize = 0;
             btnSs.FlatStyle = FlatStyle.Flat;
@@ -563,6 +591,7 @@
             // btnT
             // 
             btnT.BackColor = Color.Black;
+            btnT.Cursor = Cursors.Hand;
             btnT.FlatAppearance.BorderColor = Color.Black;
             btnT.FlatAppearance.BorderSize = 0;
             btnT.FlatStyle = FlatStyle.Flat;
@@ -578,6 +607,7 @@
             // btnTt
             // 
             btnTt.BackColor = Color.Black;
+            btnTt.Cursor = Cursors.Hand;
             btnTt.FlatAppearance.BorderColor = Color.Black;
             btnTt.FlatAppearance.BorderSize = 0;
             btnTt.FlatStyle = FlatStyle.Flat;
@@ -593,6 +623,7 @@
             // btnU
             // 
             btnU.BackColor = Color.Black;
+            btnU.Cursor = Cursors.Hand;
             btnU.FlatAppearance.BorderColor = Color.Black;
             btnU.FlatAppearance.BorderSize = 0;
             btnU.FlatStyle = FlatStyle.Flat;
@@ -608,6 +639,7 @@
             // btnV
             // 
             btnV.BackColor = Color.Black;
+            btnV.Cursor = Cursors.Hand;
             btnV.FlatAppearance.BorderColor = Color.Black;
             btnV.FlatAppearance.BorderSize = 0;
             btnV.FlatStyle = FlatStyle.Flat;
@@ -623,6 +655,7 @@
             // btnW
             // 
             btnW.BackColor = Color.Black;
+            btnW.Cursor = Cursors.Hand;
             btnW.FlatAppearance.BorderColor = Color.Black;
             btnW.FlatAppearance.BorderSize = 0;
             btnW.FlatStyle = FlatStyle.Flat;
@@ -638,6 +671,7 @@
             // btnX
             // 
             btnX.BackColor = Color.Black;
+            btnX.Cursor = Cursors.Hand;
             btnX.FlatAppearance.BorderColor = Color.Black;
             btnX.FlatAppearance.BorderSize = 0;
             btnX.FlatStyle = FlatStyle.Flat;
@@ -653,6 +687,7 @@
             // btnY
             // 
             btnY.BackColor = Color.Black;
+            btnY.Cursor = Cursors.Hand;
             btnY.FlatAppearance.BorderColor = Color.Black;
             btnY.FlatAppearance.BorderSize = 0;
             btnY.FlatStyle = FlatStyle.Flat;
@@ -668,6 +703,7 @@
             // btnYy
             // 
             btnYy.BackColor = Color.Black;
+            btnYy.Cursor = Cursors.Hand;
             btnYy.FlatAppearance.BorderColor = Color.Black;
             btnYy.FlatAppearance.BorderSize = 0;
             btnYy.FlatStyle = FlatStyle.Flat;
@@ -683,6 +719,7 @@
             // btnZ
             // 
             btnZ.BackColor = Color.Black;
+            btnZ.Cursor = Cursors.Hand;
             btnZ.FlatAppearance.BorderColor = Color.Black;
             btnZ.FlatAppearance.BorderSize = 0;
             btnZ.FlatStyle = FlatStyle.Flat;
@@ -698,6 +735,7 @@
             // btnZz
             // 
             btnZz.BackColor = Color.Black;
+            btnZz.Cursor = Cursors.Hand;
             btnZz.FlatAppearance.BorderColor = Color.Black;
             btnZz.FlatAppearance.BorderSize = 0;
             btnZz.FlatStyle = FlatStyle.Flat;
@@ -713,6 +751,7 @@
             // btnStart
             // 
             btnStart.BackColor = Color.Black;
+            btnStart.Cursor = Cursors.Hand;
             btnStart.FlatAppearance.BorderSize = 0;
             btnStart.FlatStyle = FlatStyle.Flat;
             btnStart.Font = new Font("Consolas", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 238);

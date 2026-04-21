@@ -58,6 +58,7 @@
             // btnKonec
             // 
             btnKonec.BackColor = Color.Black;
+            btnKonec.Cursor = Cursors.Hand;
             btnKonec.FlatAppearance.BorderSize = 0;
             btnKonec.FlatStyle = FlatStyle.Flat;
             btnKonec.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);

@@ -36,11 +36,12 @@
             // btnHrat
             // 
             btnHrat.BackColor = Color.Black;
+            btnHrat.Cursor = Cursors.Hand;
             btnHrat.FlatAppearance.BorderSize = 0;
             btnHrat.FlatStyle = FlatStyle.Flat;
             btnHrat.Font = new Font("Consolas", 18F, FontStyle.Bold);
             btnHrat.ForeColor = Color.White;
-            btnHrat.Location = new Point(90, 166);
+            btnHrat.Location = new Point(88, 192);
             btnHrat.Name = "btnHrat";
             btnHrat.Size = new Size(469, 40);
             btnHrat.TabIndex = 1;
@@ -52,11 +53,12 @@
             // btnKonec
             // 
             btnKonec.BackColor = Color.Black;
+            btnKonec.Cursor = Cursors.Hand;
             btnKonec.FlatAppearance.BorderSize = 0;
             btnKonec.FlatStyle = FlatStyle.Flat;
             btnKonec.Font = new Font("Consolas", 18F, FontStyle.Bold);
             btnKonec.ForeColor = Color.White;
-            btnKonec.Location = new Point(90, 292);
+            btnKonec.Location = new Point(88, 318);
             btnKonec.Name = "btnKonec";
             btnKonec.Size = new Size(469, 40);
             btnKonec.TabIndex = 2;
@@ -68,11 +70,12 @@
             // btnPravidla
             // 
             btnPravidla.BackColor = Color.Black;
+            btnPravidla.Cursor = Cursors.Hand;
             btnPravidla.FlatAppearance.BorderSize = 0;
             btnPravidla.FlatStyle = FlatStyle.Flat;
             btnPravidla.Font = new Font("Consolas", 18F, FontStyle.Bold);
             btnPravidla.ForeColor = Color.White;
-            btnPravidla.Location = new Point(90, 230);
+            btnPravidla.Location = new Point(88, 256);
             btnPravidla.Name = "btnPravidla";
             btnPravidla.Size = new Size(469, 40);
             btnPravidla.TabIndex = 3;
