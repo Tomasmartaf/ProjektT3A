@@ -28,6 +28,9 @@ namespace Projekt_PRG_TM
                 if (ctrl is Button)                 //kontrola, jestli je objekt button
                     ctrl.Click += Pismeno_Click;    //zavola event handler pro kliknuti
             }
+
+            ResetHry();
+
         }
 
         private void btnStart_Click(object sender, EventArgs e) // Kliknutí na tlačítko start v herním okně
@@ -38,7 +41,7 @@ namespace Projekt_PRG_TM
             vybraneSlovo = slovaPole[rnd.Next(slovaPole.Length)].ToLower(); // Výběr náhodného slova z pole se slovy a převede na malá písmena
 
             hadaneZnaky = new char[vybraneSlovo.Length];    // Pole pro počet znaků ve vybraném slově
-            for (int i = 0; i < hadaneZnaky.Length; i++)    // Naplní pole podtžítky pro každý znak ve slově
+            for (int i = 0; i < hadaneZnaky.Length; i++)    // Naplní pole podtržítky pro každý znak ve slově
                 hadaneZnaky[i] = '_';
 
             hadaneSlovo.Text = string.Join(" ", hadaneZnaky); // Nastaví text po startu hry
@@ -86,13 +89,13 @@ namespace Projekt_PRG_TM
             else
             {
                 MessageBox.Show("Gratulujeme! Vyhráli jste!");
-                hraje = false;
+                ResetHry(); // <-- přidáno
             }
 
             if (pocetPokusu >= 10)
             {
                 MessageBox.Show($"Prohráli jste! Správné slovo bylo: {vybraneSlovo}");
-                hraje = false;
+                ResetHry(); // <-- přidáno
             }
         }
 
@@ -122,6 +125,26 @@ namespace Projekt_PRG_TM
         private void btnKonec_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        //Funkce pro reset hry
+        private void ResetHry()
+        {
+            hraje = false;
+            pocetPokusu = 0;
+
+            vybraneSlovo = "";
+            hadaneZnaky = new char[0];
+
+            hadaneSlovo.Text = "Klikni na Start";
+
+            foreach (Control ctrl in flowLayoutPanel1.Controls)
+            {
+                if (ctrl is Button)
+                    ctrl.Enabled = false;
+            }
+
+            obesenecKresleni.Invalidate(); // vymaže šibenici
         }
     }
 }
