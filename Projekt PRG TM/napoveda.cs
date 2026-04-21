@@ -15,7 +15,7 @@ namespace Projekt_PRG_TM
         public napoveda()
         {
             InitializeComponent();
-            lblPravidla.Text = "PRAVIDLA HRY ŠIBENICE\n\n" +
+            lblPravidla.Text =
            "Cílem hry je uhodnout skryté slovo po jednotlivých písmenech.\n\n" +
            "Na začátku hry je náhodně vybráno slovo, které je zobrazeno pomocí podtržítek, " +
            "přičemž každé podtržítko představuje jedno písmeno.\n\n" +
@@ -31,6 +31,22 @@ namespace Projekt_PRG_TM
         private void napoveda_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnKonec_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void btnKonec_Enter(object sender, EventArgs e)
+        {
+
+            Button btn = sender as Button;
+            if (btn.Enabled)
+            {
+                btn.Cursor = Cursors.Hand;
+            }
+        
         }
     }
 }

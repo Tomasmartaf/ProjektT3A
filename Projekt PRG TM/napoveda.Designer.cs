@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             lblPravidla = new Label();
+            btnKonec = new Button();
             SuspendLayout();
             // 
             // label1
@@ -54,15 +55,33 @@
             lblPravidla.TabIndex = 1;
             lblPravidla.Text = "pravidla";
             // 
+            // btnKonec
+            // 
+            btnKonec.BackColor = Color.Black;
+            btnKonec.FlatAppearance.BorderSize = 0;
+            btnKonec.FlatStyle = FlatStyle.Flat;
+            btnKonec.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
+            btnKonec.ForeColor = Color.White;
+            btnKonec.Location = new Point(928, 448);
+            btnKonec.Name = "btnKonec";
+            btnKonec.Size = new Size(137, 39);
+            btnKonec.TabIndex = 8;
+            btnKonec.Text = "ZPĚT";
+            btnKonec.UseVisualStyleBackColor = false;
+            btnKonec.Click += btnKonec_Click;
+            btnKonec.Enter += btnKonec_Enter;
+            // 
             // napoveda
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1077, 499);
+            Controls.Add(btnKonec);
             Controls.Add(lblPravidla);
             Controls.Add(label1);
             Name = "napoveda";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "napoveda";
             Load += napoveda_Load;
             ResumeLayout(false);
@@ -73,5 +92,6 @@
 
         private Label label1;
         private Label lblPravidla;
+        private Button btnKonec;
     }
 }

@@ -35,9 +35,11 @@
             // 
             // btnHrat
             // 
-            btnHrat.BackColor = Color.White;
-            btnHrat.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
-            btnHrat.ForeColor = Color.Black;
+            btnHrat.BackColor = Color.Black;
+            btnHrat.FlatAppearance.BorderSize = 0;
+            btnHrat.FlatStyle = FlatStyle.Flat;
+            btnHrat.Font = new Font("Consolas", 18F, FontStyle.Bold);
+            btnHrat.ForeColor = Color.White;
             btnHrat.Location = new Point(90, 166);
             btnHrat.Name = "btnHrat";
             btnHrat.Size = new Size(469, 40);
@@ -45,11 +47,15 @@
             btnHrat.Text = "HRÁT";
             btnHrat.UseVisualStyleBackColor = false;
             btnHrat.Click += btnHrat_Click;
+            btnHrat.Enter += btnHrat_Enter;
             // 
             // btnKonec
             // 
-            btnKonec.BackColor = Color.White;
-            btnKonec.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
+            btnKonec.BackColor = Color.Black;
+            btnKonec.FlatAppearance.BorderSize = 0;
+            btnKonec.FlatStyle = FlatStyle.Flat;
+            btnKonec.Font = new Font("Consolas", 18F, FontStyle.Bold);
+            btnKonec.ForeColor = Color.White;
             btnKonec.Location = new Point(90, 292);
             btnKonec.Name = "btnKonec";
             btnKonec.Size = new Size(469, 40);
@@ -57,11 +63,15 @@
             btnKonec.Text = "KONEC";
             btnKonec.UseVisualStyleBackColor = false;
             btnKonec.Click += btnKonec_Click;
+            btnKonec.Enter += btnHrat_Enter;
             // 
             // btnPravidla
             // 
-            btnPravidla.BackColor = Color.White;
-            btnPravidla.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
+            btnPravidla.BackColor = Color.Black;
+            btnPravidla.FlatAppearance.BorderSize = 0;
+            btnPravidla.FlatStyle = FlatStyle.Flat;
+            btnPravidla.Font = new Font("Consolas", 18F, FontStyle.Bold);
+            btnPravidla.ForeColor = Color.White;
             btnPravidla.Location = new Point(90, 230);
             btnPravidla.Name = "btnPravidla";
             btnPravidla.Size = new Size(469, 40);
@@ -69,6 +79,7 @@
             btnPravidla.Text = "PRAVIDLA";
             btnPravidla.UseVisualStyleBackColor = false;
             btnPravidla.Click += btnPravidla_Click;
+            btnPravidla.Enter += btnHrat_Enter;
             // 
             // Form1
             // 
@@ -83,6 +94,7 @@
             Controls.Add(btnHrat);
             DoubleBuffered = true;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             Paint += Form1_Paint;

@@ -82,14 +82,11 @@ namespace Projekt_PRG_TM
 
             hadaneSlovo.Text = string.Join(" ", hadaneZnaky);
 
-            if (hadaneSlovo.Text.Contains("_"))
-            {
-                //Pokračuje ve hře
-            }
-            else
+            if (!hadaneSlovo.Text.Contains("_"))
             {
                 MessageBox.Show("Gratulujeme! Vyhráli jste!");
                 ResetHry();
+                return; // zrušení kdyby nastalo že hráč uhodne slovo a zároveň dosáhne 10 pokusů, aby se nezobrazilo hlášení o prohře
             }
 
             if (pocetPokusu >= 10)
@@ -145,6 +142,31 @@ namespace Projekt_PRG_TM
             }
 
             obesenecKresleni.Invalidate(); // vymaže šibenici
+        }
+
+        private void btnKonec_Enter(object sender, EventArgs e)
+        {
+
+            Button btn = sender as Button;
+            if (btn.Enabled)
+            {
+                btn.Cursor = Cursors.Hand;
+            }
+        }
+
+        private void btnKonec_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStart_Enter(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            if (btn.Enabled)
+            {
+                btn.Cursor = Cursors.Hand;
+            }
+        
         }
     }
 }
