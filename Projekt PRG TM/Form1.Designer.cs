@@ -30,6 +30,7 @@
         {
             btnHrat = new Button();
             btnKonec = new Button();
+            btnPravidla = new Button();
             SuspendLayout();
             // 
             // btnHrat
@@ -49,13 +50,25 @@
             // 
             btnKonec.BackColor = Color.White;
             btnKonec.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
-            btnKonec.Location = new Point(90, 255);
+            btnKonec.Location = new Point(90, 292);
             btnKonec.Name = "btnKonec";
             btnKonec.Size = new Size(469, 40);
             btnKonec.TabIndex = 2;
             btnKonec.Text = "KONEC";
             btnKonec.UseVisualStyleBackColor = false;
             btnKonec.Click += btnKonec_Click;
+            // 
+            // btnPravidla
+            // 
+            btnPravidla.BackColor = Color.White;
+            btnPravidla.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
+            btnPravidla.Location = new Point(90, 230);
+            btnPravidla.Name = "btnPravidla";
+            btnPravidla.Size = new Size(469, 40);
+            btnPravidla.TabIndex = 3;
+            btnPravidla.Text = "PRAVIDLA";
+            btnPravidla.UseVisualStyleBackColor = false;
+            btnPravidla.Click += btnPravidla_Click;
             // 
             // Form1
             // 
@@ -65,6 +78,7 @@
             BackgroundImage = Properties.Resources.šibenice;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(629, 594);
+            Controls.Add(btnPravidla);
             Controls.Add(btnKonec);
             Controls.Add(btnHrat);
             DoubleBuffered = true;
@@ -78,5 +92,6 @@
         #endregion
         private Button btnHrat;
         private Button btnKonec;
+        private Button btnPravidla;
     }
 }

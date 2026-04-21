@@ -37,5 +37,17 @@ namespace Projekt_PRG_TM
 
             this.Show();
         }
+
+        private void btnPravidla_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            napoveda napovedaOkno = new napoveda();
+
+            napovedaOkno.ShowDialog();
+
+            this.Show();
+
+        }
     }
 }

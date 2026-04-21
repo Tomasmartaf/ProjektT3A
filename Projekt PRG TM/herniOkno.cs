@@ -89,13 +89,13 @@ namespace Projekt_PRG_TM
             else
             {
                 MessageBox.Show("Gratulujeme! Vyhráli jste!");
-                ResetHry(); // <-- přidáno
+                ResetHry();
             }
 
             if (pocetPokusu >= 10)
             {
                 MessageBox.Show($"Prohráli jste! Správné slovo bylo: {vybraneSlovo}");
-                ResetHry(); // <-- přidáno
+                ResetHry();
             }
         }
 

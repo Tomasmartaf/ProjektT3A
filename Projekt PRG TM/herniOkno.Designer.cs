@@ -148,7 +148,7 @@
             flowLayoutPanel1.Controls.Add(btnZz);
             flowLayoutPanel1.Location = new Point(12, 85);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(214, 268);
+            flowLayoutPanel1.Size = new Size(219, 268);
             flowLayoutPanel1.TabIndex = 6;
             // 
             // btnA
