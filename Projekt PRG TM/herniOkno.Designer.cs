@@ -80,7 +80,7 @@
             btnKonec.Cursor = Cursors.Hand;
             btnKonec.FlatAppearance.BorderSize = 0;
             btnKonec.FlatStyle = FlatStyle.Flat;
-            btnKonec.Font = new Font("Source Code Pro", 18F, FontStyle.Bold);
+            btnKonec.Font = new Font("Consolas", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             btnKonec.ForeColor = Color.White;
             btnKonec.Location = new Point(545, 406);
             btnKonec.Name = "btnKonec";

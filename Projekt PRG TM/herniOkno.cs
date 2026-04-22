@@ -12,11 +12,24 @@ namespace Projekt_PRG_TM
         char[] hadaneZnaky;
         int pocetPokusu = 0;
 
-        string[] slovaPole =    // Pole se slovy pro hru
-        {
-            "jablko", "strom", "auto", "pes", "kočka",
-            "škola", "program", "hra", "kniha", "mobil",
-            "řeka", "hora", "město", "počítač", "slunce"
+        string[] slovaPole =
+{
+            "jablko", "strom", "auto", "pes", "kočka", "škola", "kniha", "řeka",
+            "hora", "město", "slunce", "měsíc", "káva", "chleba", "rodina",
+            "domov", "cesta", "vlak", "letadlo", "hudba", "divadlo", "papír",
+            "tužka", "stůl", "židle", "okno", "dveře", "barva", "světlo",
+            "stín", "voda", "oheň", "země","počítač", "program", "klávesnice",
+            "monitor", "procesor", "paměť","vývojář", "klient", "token",
+            "disk", "server", "síť", "internet", "router", "firewall", "databáze",
+            "algoritmus", "kód", "aplikace", "systém", "rozhraní", "pixel", "bajt",
+            "cloud", "šifrování", "heslo", "myš", "tiskárna", "kompilátor",
+            "debugování", "proměnná", "funkce", "metoda", "objekt", "třída",
+            "hardware", "software", "wifi", "ethernet", "kabel", "grafika", "zvuk",
+            "port", "protokol", "doména", "prohlížeč", "záloha", "aktualizace",
+            "soubor", "složka", "instalace", "chyba", "virus", "antivirus",
+            "mobil", "tablet", "notebook", "displej", "baterie", "nabíječka",
+            "sluchátka", "mikrofon", "kamera", "skript", "repozitář", "hosting"
+            
         };
 
         public herniOkno()
